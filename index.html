@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #34ffab;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #00000022 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #00000022 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/td.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 7">
+            <div class="item" style="--position: 1"><img src="ase.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="jjjj.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="td.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="WhatsApp Image 2025-02-21 at 2.11.18 AM.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="WhatsApp Image 2025-02-21 at 2.11.19 AM (1).jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="WhatsApp Image 2025-02-21 at 2.11.19 AM.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="WhatsApp Image 2025-02-21 at 2.11.22 AM.jpg" alt=""></div>
+
+        </div>
+        <div class="content">
+            <h1 data-content="b4nner">
+                KARTIK SHARMA
+            </h1>
+            <div class="author">
+                <h2>KARTIK</h2>
+                <p><b>KINGDOM HALL</b></p>
+                <p>
+                    welcome to my web
+                </p>
+            </div>
+            <div class="model"></div>
+
+            <img src="images/td.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <span>𝙆𝘼𝙍𝙏𝙄𝙆 𝙎𝙃𝘼𝙍𝙈𝘼</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+            <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Skills</a>
+            <a href="">Services</a>
+            <a href="">Blogs</a>
+            <a href="">Contact Us</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="jjjj.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">I AM <span></span>𝙆𝘼𝙍𝙏𝙄𝙆 𝙎𝙃𝘼𝙍𝙈𝘼</h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I AM <span><i class="fa fa-youtube-square" aria-hidden="true"></i></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, perferendis quas consectetur possimus maxime consequatur cupiditate eos dolorum molestias praesentium error exercitationem rem labore illo, in dolor, odio corporis excepturi?</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="#" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/0wn._kartik?igsh=NHl1amQ3b3IzMW5p"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button  href="https://www.instagram.com/0wn._kartik?igsh=NHl1amQ3b3IzMW5p"><i class="fa-brands fa-instagram"></i> CONNECT TO ME </button> 
+                    <link rel="stylesheet" href="" class="button">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+    
+</body>
+</html>
